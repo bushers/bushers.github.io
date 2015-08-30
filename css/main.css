@@ -236,7 +236,7 @@ footer, .overlay-social {
 
 footer li, .overlay-social li {
 	display: inline-block;
-	padding: 0 35px;
+	padding: 0 16px;
 }
 footer ul, .overlay-social ul {
 	text-align: center;
@@ -318,6 +318,10 @@ footer h4, .overlay-social h4 {
 	.main-title {
 		padding-top: 160px;
 	}
+	.overlay-social {
+	    width: 318px;
+	    padding: 20px;
+	    margin: 40% auto;
 }
 
 @media all and (max-width: 370px) {
