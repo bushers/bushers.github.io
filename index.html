@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- 
+Hi there! My name is Nick, and I'm an aspiring front-end web developer currently based in Leeds.
+
+Feel free to have a nosey around.
+-->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nick Bushby - Front End Developer</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:300|Open+Sans:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<!-- Scripts -->
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<div class="hero-img">
+		<div class="overlay">
+
+	<!-- Nav Bar -->
+			<header class="topnav">
+				<div class="grid-container">
+					<div class="nav-heading grid-3">
+						<h3>Nick Bushby</h3>
+					</div>
+					<ul class="navbar grid-9" role="navigation">
+						<!-- <li><a href="#home">Home</a></li> -->
+						<li><a class="nav-link" href="#about">About</a></li>
+						<li><a class="nav-link" href="#portfolio">Work</a></li>
+						<li><a class="nav-link" href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</header>
+			
+	<!-- Jumbotron -->
+			<div class="jumbotron" id="home">				
+				<h1 class="main-title">Nick Bushby</h1>
+				<h3>Front End Developer</h3>
+				<h2>HTML5, CSS3, JavaScript, jQuery, Responsive Design</h2>
+				<a href="#about"><i class="fa fa-angle-down arrow"></i></a>
+			</div>
+		</div>
+	</div>
+	
+	<!-- About Section -->
+	<div id="about">
+		<div class="section grid-container">
+			<h2 class="section-heading">About</h2>
+			<div class="about-right-col grid-6">
+				<p>Hi there! My name is Nick, and I'm an aspiring front-end web developer currently based in Leeds.</p>
+				<p> I have recently developed a passion for code and have spent the last six months honing my skills in HTML, CSS and JavaScript. I have taken advantage of great resources such as Treehouse, Codecademy and W3Schools to learn the skills needed to create exciting user experiences on the web.</p>
+				<p> I am eager to advance my skills and am actively seeking interships or junior positions in order to take the next step in my webdev career.</p>
+				<p>Please don't hesitate to get in touch!</p>
+				<button class="contact-btn">Contact</button>
+			</div>
+			<div class="about-left-col grid-6">
+				<div class="img-container">
+					<img class="img-self" src="img/profile.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="banner">
+		<img src="img/code-name.jpg">
+	</div>
+
+	<!-- Portfolio Section -->
+	<div id="portfolio">
+		<div class="section grid-container">	
+			<h2 class="section-heading">Work</h2>
+			<div class="portfolio-img grid-6">
+				<div class="img-container">
+					<img class="site-sketch" src="img/site-plan.jpg">
+				</div>
+			</div>
+			<div class="portfolio-text grid-6">
+				<p>I guess my first project is this homepage itself!</p>
+				<p>Using a simple grid system I was able to ensure the sections of the page were responsive across a range of device widths.</p>
+				<p>Adding interactivity with jQuery I was able to change the styling of the nav bar as user scrolls down from the top of the page. I also made use of a smooth scrolling effect on the internal page links, and added an overlay when the 'contact' button is clicked.</p>
+				<p>More coming soon!</p>
+				<p><b>Currently working on:</b></p>
+				<ul>
+					<li>Personal blog using Jekyll;</li>
+					<li>WordPress site and theme;</li>
+					<li>PHP and databases</li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+		
+	<!-- Footer -->
+		<footer id="contact">
+			<h3>Get in touch!</h3>
+			<ul>
+				<li><a href="mailto:nickbushby1@gmail.com"><i class="fa fa-envelope social"></i></a></li>
+				<li><a href="http://twitter.com/nickbushby1"><i class="fa fa-twitter social"></i></a></li>
+				<li><a href="https://uk.linkedin.com/pub/nick-bushby/104/683/8a3"><i class="fa fa-linkedin social"></i></a></li>
+			</ul>
+			<h4>Copyright &copy; 2015 Nick Bushby</h4>
+		</footer>
+	</div>
+
+	<!-- Contact Overlay -->
+	<div id="contact-overlay">
+		<div class="overlay-social">
+			<h3>Get in touch!</h3>
+			<ul>
+				<li><a href="mailto:nickbushby1@gmail.com"><i class="fa fa-envelope social"></i></a></li>
+				<li><a href="http://twitter.com/nickbushby1"><i class="fa fa-twitter social"></i></a></li>
+				<li><a href="https://uk.linkedin.com/pub/nick-bushby/104/683/8a3"><i class="fa fa-linkedin social"></i></a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
