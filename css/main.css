@@ -313,7 +313,7 @@ footer h4, .overlay-social h4 {
 
 @media all and (max-width: 627px) {
 	.jumbotron h2 {
-		margin-bottom: 70px;
+		margin-bottom: 50px;
 	}
 	.main-title {
 		padding-top: 160px;
