@@ -66,6 +66,10 @@ p {
 	text-align: center;
 	color: #aaa;
 }
+.nav-heading a {
+	text-decoration: none;
+	color: inherit;
+}
 
 .navbar {
 	display: inline-block;
