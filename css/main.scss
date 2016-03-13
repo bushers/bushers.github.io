@@ -1,0 +1,430 @@
+/*******GENERAL STYLES***********/
+
+html, body {
+	box-sizing: border-box;
+	margin: 0;
+	height: 100%;
+}
+
+body {
+	font-family: Roboto, Helvetica, sans-serif;
+	min-height: 100%;
+	position: relative;
+	background-color: darken(#f2f2f2, 10%);
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, ul, li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+p {
+	line-height: 1.6;
+	text-align: justify;
+	font-size: 1.2em;
+}
+
+.section {
+	padding: 70px 30px;
+}
+
+.section-heading {
+	text-align: center;
+	margin-bottom: 20px;
+	letter-spacing: 0.2em;
+}
+
+#about, #portfolio {
+	// background-color: darken(#f2f2f2, 10%);
+}
+
+
+/***********NAV STYLES***********/
+
+.topnav {
+	width: 100%;
+	height: 70px;
+	background: transparent;
+	position: fixed;
+	z-index: 9;
+	top: 0;
+	left: 0;
+	right: 0;
+   -webkit-transition: background 0.4s ease-in-out;
+   -moz-transition: background 0.4s ease-in-out;
+   -o-transition: background 0.4s ease-in-out;
+   transition: background 0.4s ease-in-out;
+}
+
+.nav-heading {
+	display: inline-block;
+	line-height: 70px;
+	font-family: Roboto;
+	font-size: 1.2em;
+	letter-spacing: 0.2em;
+	text-align: center;
+	color: #aaa;
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+}
+
+.navbar {
+	display: inline-block;
+	text-align: right;
+	li {
+		display: inline-block;	
+		a {
+			text-decoration: none;
+			text-transform: lowercase;
+			display: block;
+			font-family: "Open Sans";
+			font-size: 1.1em;
+			padding: 20px;
+			letter-spacing: 0.2em;
+			text-align: center;
+			color: #aaa;
+		}
+		a:hover {
+			color: #fff;
+  			transition: 0.5s;
+		}
+	}
+}
+
+
+/*********JUMBOTRON STYLES**********/
+
+.jumbotron {
+	text-align: center;
+	background-color: transparent;
+	color: #fff;
+	h2 {
+		margin-bottom: 130px;
+		font-weight: lighter;
+		text-shadow: 1px 1px #000;
+		letter-spacing: 1px;
+	}
+	h3 {
+		letter-spacing: 0.2em;
+		margin-bottom: 32px;
+		font-family: Roboto;
+		font-size: 1.5em;
+		font-weight: lighter;
+		text-shadow: 1px 1px #000;
+	}
+	a {
+		text-decoration: none;
+		color: #fff;
+	}
+}
+
+.main-title {
+	padding-top: 200px;
+	padding-bottom: 20px;
+	font-family: Roboto;
+	font-size: 5em;
+	font-weight: lighter;
+	text-shadow: 1px 1px #000;
+	letter-spacing: 0.2em;
+}
+
+.hero-img {
+  height: 640px;
+  background-image: url(../img/hero-img.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.arrow {
+	font-size: 4em;
+}
+
+
+/*********ABOUT SECTION STYLES*****/
+
+div[class*="about"] {
+	display: inline-block;
+	vertical-align: top;
+	padding: 20px;
+}
+
+.img-container {
+	margin: 10px auto;
+	max-width: 333.33px;
+}
+
+.img-self {
+	box-shadow: 3px 3px 8px;
+}
+
+.group-btns {
+	text-align: center;
+}
+
+.button {
+	display: inline-block;
+	margin: 26px 15px;
+	width: 140px;
+	height: 50px;
+    text-transform: lowercase;
+    font-family: "Open Sans";
+    font-size: 1.1em;
+    letter-spacing: 0.2em;
+    border-radius: 5px;
+    background-color: #333;
+    color: #aaa;
+    box-shadow: 3px 3px 8px;
+    a {
+    	color: inherit;
+    	text-decoration: none;
+    }
+}
+
+.button:hover {
+	color: rgba(255,255,255,0.8);
+  	transition: 0.5s; 	
+}
+
+
+/*********BANNER STYLES*************/
+
+#banner {
+	width: 100%;
+	height: 250px;
+	img {
+		box-shadow: 3px 3px 8px;
+	}
+}
+
+
+/******PORTFOLIO SECTION STYLES*****/
+
+#portfolio p {
+	text-align: center;
+}
+
+.portfolio-images {
+	display: block;
+
+	a {
+		text-align: center;
+		position: relative;
+    	display: block;
+    	margin: 20px 5px;
+
+    	img {
+    		box-shadow: 3px 3px 8px;
+    	}
+	}
+}
+
+.thumbnail-text {
+	background: rgba(0,0,0,0.8);
+	color: white;
+	display: block;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 98.5%;
+	opacity: 0;
+	-webkit-transition: opacity 500ms;
+	-moz-transition: opacity 500ms;
+	-o-transition: opacity 500ms;
+	transition: opacity 500ms;
+
+	&:hover {
+		opacity: 1;
+	}
+
+	.thumbnail-title {
+		background-color: rgba(255,255,255,0.8);
+		color: #000;
+		margin: 0 0 30px 0;
+		padding: 10px 0;
+		font-size: 1.6em;
+		text-transform: uppercase;
+	}
+}
+
+.portfolio-text {
+	padding: 5px 30px;
+	li {
+		line-height: 1.6em;
+		font-size: 1.03em;
+		padding-left: 20px;	
+	}
+}
+
+/*div[class*="port"] {
+	display: inline-block;
+	vertical-align: top;
+	padding: 20px;
+}*/
+
+
+
+/***********FOOTER AND MODAL STYLES***********/
+
+footer, .overlay-social {
+	width: 100%;
+	display: block;
+	background-color: #191919;
+	padding: 25px 0 ;
+	color: #aaa;
+}
+
+.overlay-social {
+	width: 400px;
+	padding: 30px;
+	border-radius: 10px;
+	margin: 20% auto;
+	display: none;
+}
+
+footer li, .overlay-social li {
+	display: inline-block;
+	padding: 0 16px;
+}
+
+footer ul, .overlay-social ul {
+	text-align: center;
+}
+
+.social {
+	font-size: 2em;
+}
+
+footer a, .overlay-social a {
+	color: #fff;
+}
+
+footer a:hover, .overlay-social a:hover {
+	opacity: 0.7;
+  	transition: 0.5s;
+}
+
+footer h3, .overlay-social h3 {
+	text-align: center;
+	letter-spacing: 0.2em;
+	padding-bottom: 40px;
+	font-size: 1.4em;
+	font-weight: lighter;
+}
+
+footer h4, .overlay-social h4 {
+	text-align:center;
+	font-weight: lighter;
+	padding-top: 40px;
+}
+
+
+/*********CONTACT OVERLAY**********/
+
+#contact-overlay {
+	z-index: 99;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+  	left: 0;
+	background: rgba(0,0,0,0.8);
+	display: none;
+}
+
+
+/*********MEDIA QUERIES***********/
+
+@media all and (max-width: 766px) {
+
+	.topnav {
+		height: 60px;
+	}
+
+	.nav-heading {
+		display: none;
+	}
+
+	.navbar {
+		text-align: center;
+		display: block;
+	}
+
+	.navbar li a {
+		padding: 17px 20px;
+	}
+
+	div [class*="about"], div [class*="port"] {
+		display: block;
+		padding: 20px;
+	}
+
+	.img-container {
+		margin: auto;
+	}
+
+	.section {
+		padding: 60px 30px;
+	}
+
+	.portfolio-img {
+		margin-top: 40px;
+	}
+}
+
+@media all and (max-width: 627px) {
+	.jumbotron h2 {
+		margin-bottom: 50px;
+	}
+
+	.main-title {
+		padding-top: 160px;
+	}
+
+	.overlay-social {
+	    width: 318px;
+	    padding: 20px;
+	    margin: 40% auto;
+	}
+}
+
+@media all and (max-width: 370px) {
+	.navbar li a {
+		padding: 20px 10px;
+	}
+
+	.main-title {
+		font-size: 4em;
+	}
+
+	.jumbotron h3 {
+		font-size: 1.3em;
+		margin-bottom: 50px;
+	}
+
+	p {
+		line-height: 1.3em;
+	}
+}

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!-- 
+<!--
+
 Hi there! My name is Nick, and I'm an aspiring front-end web developer currently based in Leeds.
 
-Feel free to have a nosey around.
 -->
 <html lang="en">
 <head>
@@ -42,7 +42,7 @@ Feel free to have a nosey around.
 			<div class="jumbotron" id="home">				
 				<h1 class="main-title">Nick Bushby</h1>
 				<h3>Front End Developer</h3>
-				<h2>HTML5, CSS3, JavaScript, jQuery, Responsive Design</h2>
+				<h2>HTML - CSS - JavaScript - WordPress - Responsive Design</h2>
 				<a href="#about"><i class="fa fa-angle-down arrow"></i></a>
 			</div>
 		</div>
@@ -53,19 +53,22 @@ Feel free to have a nosey around.
 		<div class="section grid-container">
 			<h2 class="section-heading">About</h2>
 			<div class="about-right-col grid-6">
-				<p>Hi there! My name is Nick, and I'm an aspiring front-end web developer currently based in Leeds.</p>
-				<p> I have recently developed a passion for code and have spent the last several months honing my skills in HTML, CSS and JavaScript. I have taken advantage of great resources, including books and online learning tools such as Treehouse and Codecademy to learn the skills needed to create exciting user experiences on the web.</p>
-				<p> I am eager to advance my skills and am actively seeking internships or junior positions in order to take the next step in my webdev career.</p>
+				<p>Hi there! My name is Nick, and I'm a front-end web developer currently based in Leeds.</p>
+				<p> I have recently developed a passion for code and solving digital dilemmas. I have spent the last year honing my skills in HTML, CSS and JavaScript. I have taken advantage of great resources, including numerous books and online learning tools to develop the skills needed to create exciting user experiences on the web.</p>
+				<p> I am eager to advance my skills and am actively seeking junior positions and freelance work.</p>
 				<p>Please don't hesitate to get in touch!</p>
-				<button class="contact-btn">Contact</button>
+				<div class="group-btns">
+					<button class="button contact-btn">Contact</button>
+					<a href="nick-bushby-cv.pdf"><button class="button">CV</button></a>
+				</div>
 			</div>
 			<div class="about-left-col grid-6">
 				<div class="img-container">
 					<img class="img-self" src="img/profile.jpg">
 				</div>
 			</div>
-		</div>
-	</div>
+		</div><!-- End grid container -->
+	</div><!-- End About section -->
 
 	<div id="banner">
 		<img src="img/code-name.jpg">
@@ -73,27 +76,57 @@ Feel free to have a nosey around.
 
 	<!-- Portfolio Section -->
 	<div id="portfolio">
-		<div class="section grid-container">	
+		<div class="section">	
 			<h2 class="section-heading">Work</h2>
-			<div class="portfolio-img grid-6">
-				<div class="img-container">
-					<img class="site-sketch" src="img/site-plan.jpg">
+			<p>Take a look at some of my current and past projects.</p>
+			<div class="portfolio-images">
+				<div class="grid-container">
+					<div class="grid-6">
+						<a href="">
+							<img src="img/shade-luma-thumb.png">
+							<span class="thumbnail-text">
+								<p class="thumbnail-title">Shade Luma</p>
+								<p>WordPress, PHP, CSS</p>
+								<p>Click for more info!</p>
+							</span>
+						</a>
+					</div>
+					<div class="grid-6">
+						<a href="">
+							<img src="img/kt-dance-thumb.png">
+							<span class="thumbnail-text">
+								<p class="thumbnail-title">KT Dance School</p>
+								<p>HTML, Sass, Bootstrap</p>
+								<p>Click for more info!</p>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="grid-container">
+					<div class="grid-6">
+						<a href="">
+							<img src="img/blog-thumb.png">
+							<span class="thumbnail-text">
+								<p class="thumbnail-title">Personal Blog</p>
+								<p>Jekyll, Liquid Templates, Markdown</p>
+								<p>Click for more info!</p>
+							</span>
+						</a>
+					</div>
+					<div class="grid-6">
+						<a href="">
+							<img src="img/homepage-thumb.png">
+							<span class="thumbnail-text">
+								<p class="thumbnail-title">Homepage</p>
+								<p>HTML, CSS, jQuery</p>
+								<p>Click for more info!</p>
+							</span>
+						</a>
+					</div>
 				</div>
 			</div>
-			<div class="portfolio-text grid-6">
-				<p>I guess my first project is this homepage itself!</p>
-				<p>Using a simple grid system I was able to ensure the sections of the page were responsive across a range of device widths.</p>
-				<p>Adding interactivity with jQuery I was able to change the styling of the nav bar as user scrolls down from the top of the page. I also made use of a smooth scrolling effect on the internal page links, and added an overlay when the 'contact' button is clicked.</p>
-				<p>More coming soon!</p>
-				<p><b>Currently working on:</b></p>
-				<ul>
-					<li>Personal blog using Jekyll;</li>
-					<li>WordPress site and theme;</li>
-					<li>PHP and databases</li>
-				</ul>
-			</div>
-		</div>	
-	</div>
+		</div><!-- End section class -->	
+	</div><!-- End portfolio section -->
 		
 	<!-- Footer -->
 		<footer id="contact">
