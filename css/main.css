@@ -122,7 +122,7 @@ p {
   -o-background-size: cover;
   background-size: cover; }
 
-.overlay {
+.hero-img-overlay {
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%; }
@@ -198,10 +198,10 @@ div[class*="about"] {
   width: 100%;
   height: 98.5%;
   opacity: 0;
-  -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
-  -o-transition: opacity 500ms;
-  transition: opacity 500ms; }
+  -webkit-transition: opacity 700ms;
+  -moz-transition: opacity 700ms;
+  -o-transition: opacity 700ms;
+  transition: opacity 700ms; }
   .thumbnail-text:hover {
     opacity: 1; }
   .thumbnail-text .thumbnail-title {
@@ -211,6 +211,9 @@ div[class*="about"] {
     padding: 10px 0;
     font-size: 1.6em;
     text-transform: uppercase; }
+    @media screen and (min-width: 1100px) {
+      .thumbnail-text .thumbnail-title {
+        margin-bottom: 50px; } }
 
 .portfolio-text {
   padding: 5px 30px; }
@@ -268,8 +271,8 @@ footer h4, .overlay-social h4 {
   font-weight: lighter;
   padding-top: 40px; }
 
-/*********CONTACT OVERLAY**********/
-#contact-overlay {
+/***********OVERLAY************/
+#overlay {
   z-index: 99;
   width: 100%;
   height: 100%;
@@ -277,6 +280,19 @@ footer h4, .overlay-social h4 {
   left: 0;
   background: rgba(0, 0, 0, 0.8);
   display: none; }
+
+.overlay-portfolio {
+  display: block;
+  margin-top: 15%;
+  background-color: #191919;
+  padding: 25px 0;
+  color: #aaa; }
+  .overlay-portfolio h3 {
+    margin-top: 25px; }
+  .overlay-portfolio p {
+    line-height: 1.4; }
+  .overlay-portfolio a {
+    color: #fff; }
 
 /*********MEDIA QUERIES***********/
 @media all and (max-width: 766px) {

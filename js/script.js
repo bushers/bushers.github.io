@@ -29,24 +29,31 @@ $(document).ready(function(){
 
 
 	//Click event for overlay
-	$(".contact-btn").click(function (e) {
-		
-		//Get current scroll position
-		var position = $(document).scrollTop();
-		$('#contact-overlay').css( "top", position );
+	function showOverlay(element, overlayEl) {
 
-		//Show overlay
-		e.preventDefault();
-		$('body').css('padding-right', '17px');
-		$('body').css('overflow', 'hidden');
-		$('#contact-overlay').show();
-		$('.overlay-social').fadeIn('5000');
-	});
+		$(element).click(function (e) {
+			
+			//Get current scroll position
+			var position = $(document).scrollTop();
+			$('#overlay').css( "top", position );
+
+			//Show overlay
+			e.preventDefault();
+			$('body').css('padding-right', '17px');
+			$('body').css('overflow', 'hidden');
+			$('#overlay').show();
+			$('#overlay').append(overlayEl);
+			$(overlayEl).fadeIn('slow');
+		});
+	}
+	showOverlay($('.contact-btn'), $('.overlay-social'));
+	showOverlay($('#portfolio-images-shade-luma'), $('#overlay-shade-luma'));
+
 
 	//Hide overlay
-	$('#contact-overlay').click(function() {
-		$('#contact-overlay').hide();
-		$('.overlay-social').hide();
+	$('#overlay').click(function() {
+		$('#overlay').hide();
+		$('#overlay>div').hide();
 		$('body').css('padding-right', '0');
 		$('body').css('overflow', 'auto');
 	});

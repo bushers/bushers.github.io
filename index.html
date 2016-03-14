@@ -21,7 +21,7 @@ Hi there! My name is Nick, and I'm an aspiring front-end web developer currently
 </head>
 <body>
 	<div class="hero-img">
-		<div class="overlay">
+		<div class="hero-img-overlay">
 
 	<!-- Nav Bar -->
 			<header class="topnav">
@@ -82,7 +82,7 @@ Hi there! My name is Nick, and I'm an aspiring front-end web developer currently
 			<div class="portfolio-images">
 				<div class="grid-container">
 					<div class="grid-6">
-						<a href="">
+						<a id="portfolio-images-shade-luma" href="">
 							<img src="img/shade-luma-thumb.png">
 							<span class="thumbnail-text">
 								<p class="thumbnail-title">Shade Luma</p>
@@ -142,16 +142,30 @@ Hi there! My name is Nick, and I'm an aspiring front-end web developer currently
 	</div>
 
 	<!-- Contact Overlay -->
-	<div id="contact-overlay">
-		<div class="overlay-social">
-			<h3>Get in touch!</h3>
-			<ul>
-				<li><a href="mailto:nickbushby1@gmail.com"><i class="fa fa-envelope social"></i></a></li>
-				<li><a href="http://twitter.com/nickbushby1"><i class="fa fa-twitter social"></i></a></li>
-				<li><a href="https://uk.linkedin.com/pub/nick-bushby/104/683/8a3"><i class="fa fa-linkedin social"></i></a></li>
-				<li><a href="https://github.com/bushers"><i class="fa fa-github-square social"></i></a></li>
-			</ul>
+	<div id="overlay"></div>
+
+	<div class="overlay-social">
+		<h3>Get in touch!</h3>
+		<ul>
+			<li><a href="mailto:nickbushby1@gmail.com"><i class="fa fa-envelope social"></i></a></li>
+			<li><a href="http://twitter.com/nickbushby1"><i class="fa fa-twitter social"></i></a></li>
+			<li><a href="https://uk.linkedin.com/pub/nick-bushby/104/683/8a3"><i class="fa fa-linkedin social"></i></a></li>
+			<li><a href="https://github.com/bushers"><i class="fa fa-github-square social"></i></a></li>
+		</ul>
+	</div>
+
+	<div id="overlay-shade-luma" class="overlay-portfolio">
+		<div class="grid-container">
+			<div class="grid-6">
+				<h3>KT The Dance School</h3>
+				<p>Complete site redesign based on client specs, using Bootstrap CSS and JavaScript components including responsive grid system, navigation and carousel</p>
+				<a href="#"><p>Visit Site</p></a>
+			</div>
+			<div class="grid-6">
+				<img src="img/shade-luma-thumb.png">
+			</div>
 		</div>
 	</div>
+	
 </body>
 </html>

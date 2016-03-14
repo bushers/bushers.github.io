@@ -152,7 +152,7 @@ p {
   background-size: cover;
 }
 
-.overlay {
+.hero-img-overlay {
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
@@ -251,10 +251,10 @@ div[class*="about"] {
 	width: 100%;
 	height: 98.5%;
 	opacity: 0;
-	-webkit-transition: opacity 500ms;
-	-moz-transition: opacity 500ms;
-	-o-transition: opacity 500ms;
-	transition: opacity 500ms;
+	-webkit-transition: opacity 700ms;
+	-moz-transition: opacity 700ms;
+	-o-transition: opacity 700ms;
+	transition: opacity 700ms;
 
 	&:hover {
 		opacity: 1;
@@ -264,6 +264,10 @@ div[class*="about"] {
 		background-color: rgba(255,255,255,0.8);
 		color: #000;
 		margin: 0 0 30px 0;
+		@media screen and (min-width: 1100px) {
+			margin-bottom: 50px;
+		}
+
 		padding: 10px 0;
 		font-size: 1.6em;
 		text-transform: uppercase;
@@ -342,9 +346,9 @@ footer h4, .overlay-social h4 {
 }
 
 
-/*********CONTACT OVERLAY**********/
+/***********OVERLAY************/
 
-#contact-overlay {
+#overlay {
 	z-index: 99;
 	width: 100%;
 	height: 100%;
@@ -352,6 +356,26 @@ footer h4, .overlay-social h4 {
   	left: 0;
 	background: rgba(0,0,0,0.8);
 	display: none;
+}
+
+.overlay-portfolio {
+	display: block;
+	margin-top: 15%;
+	background-color: #191919;
+	padding: 25px 0;
+	color: #aaa;
+
+	h3 {
+		margin-top: 25px;
+	}
+
+	p {
+		line-height: 1.4;
+	}
+
+	a {
+		color: #fff;
+	}
 }
 
 
