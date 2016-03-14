@@ -48,6 +48,7 @@ $(document).ready(function(){
 	}
 	showOverlay($('.contact-btn'), $('.overlay-social'));
 	showOverlay($('#portfolio-images-shade-luma'), $('#overlay-shade-luma'));
+	showOverlay($('#portfolio-images-kt-dance'), $('#overlay-kt-dance'));
 
 
 	//Hide overlay
