@@ -282,7 +282,7 @@ footer h4, .overlay-social h4 {
   display: none; }
 
 .overlay-portfolio {
-  display: block;
+  display: none;
   margin-top: 12%;
   background-color: #191919;
   padding: 25px 0;
