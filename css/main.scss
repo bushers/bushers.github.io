@@ -187,6 +187,9 @@ div[class*="about"] {
 .button {
 	display: inline-block;
 	margin: 26px 15px;
+	@media all and (max-width: 520px) {
+		margin: 18px 15px;
+	}
 	width: 140px;
 	height: 50px;
     text-transform: lowercase;
@@ -420,7 +423,7 @@ footer h4, .overlay-social h4 {
 	}
 
 	.section {
-		padding: 60px 30px;
+		padding: 60px 15px;
 	}
 
 	.portfolio-img {
