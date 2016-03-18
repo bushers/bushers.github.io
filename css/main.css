@@ -128,7 +128,10 @@ p {
   height: 100%; }
 
 .arrow {
-  font-size: 4em; }
+  font-size: 4em;
+  transition: transform .5s; }
+  .arrow:hover {
+    transform: scale(1.4); }
 
 /*********ABOUT SECTION STYLES*****/
 div[class*="about"] {
@@ -158,10 +161,13 @@ div[class*="about"] {
   border-radius: 5px;
   background-color: #333;
   color: #aaa;
-  box-shadow: 3px 3px 8px; }
+  box-shadow: 3px 3px 8px;
+  transition: transform .5s; }
   @media all and (max-width: 520px) {
     .button {
       margin: 18px 15px; } }
+  .button:hover {
+    transform: scale(1.1); }
   .button a {
     color: inherit;
     text-decoration: none; }
@@ -190,7 +196,10 @@ div[class*="about"] {
     text-align: center;
     position: relative;
     display: block;
-    margin: 20px 5px; }
+    margin: 20px 5px;
+    transition: transform .5s; }
+    .portfolio-images a:hover {
+      transform: scale(1.1); }
     .portfolio-images a img {
       box-shadow: 3px 3px 8px; }
 
@@ -322,7 +331,7 @@ footer h4, .overlay-social h4 {
 
   div [class*="about"], div [class*="port"] {
     display: block;
-    padding: 20px; }
+    padding: 20px 0; }
 
   .img-container {
     margin: auto; }
@@ -355,6 +364,12 @@ footer h4, .overlay-social h4 {
     margin-bottom: 50px; }
 
   p {
-    line-height: 1.3em; } }
+    line-height: 1.3em; }
+
+  div [class*="about"], div [class*="port"] {
+    padding: 20px 5px; }
+
+  .section {
+    padding: 60px 2px; } }
 
 /*# sourceMappingURL=main.css.map */
