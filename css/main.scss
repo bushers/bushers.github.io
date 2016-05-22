@@ -26,13 +26,13 @@ h1, h2, h3, h4, h5, h6, ul, li {
 
 img {
 	max-width: 100%;
-	max-height: 100%;
+	height: auto;
 }
 
 p {
 	line-height: 1.6;
-	text-align: justify;
 	font-size: 1.2em;
+	padding: 0 5px;
 }
 
 .section {
@@ -55,6 +55,7 @@ p {
 .topnav {
 	width: 100%;
 	height: 70px;
+	overflow: hidden;
 	background: transparent;
 	position: fixed;
 	z-index: 9;
@@ -78,6 +79,10 @@ p {
 	a {
 		text-decoration: none;
 		color: inherit;
+		&:hover {
+			color: #fff;
+			transition: 0.6s;
+		}
 	}
 }
 
@@ -93,13 +98,16 @@ p {
 			font-family: "Open Sans";
 			font-size: 1.1em;
 			padding: 20px;
+			padding-bottom: 30px;
 			letter-spacing: 0.2em;
 			text-align: center;
 			color: #aaa;
+			border-bottom: 4px solid #fff;
 		}
 		a:hover {
 			color: #fff;
-  			transition: 0.5s;
+			padding-bottom: 20px;
+  			transition: 0.6s ease;
 		}
 	}
 }
@@ -225,13 +233,9 @@ div[class*="about"] {
 
 #banner {
 	width: 100%;
-	height: 250px;
-	@media all and (max-width: 767px) {
-		height: 180px;
-	}
-
 	img {
 		box-shadow: 3px 3px 8px;
+		max-height: 250px;
 	}
 }
 
@@ -275,6 +279,9 @@ div[class*="about"] {
 	-moz-transition: opacity 700ms;
 	-o-transition: opacity 700ms;
 	transition: opacity 700ms;
+	p {
+		font-size: 1.1em;
+	}
 
 	&:hover {
 		opacity: 1;
@@ -289,7 +296,7 @@ div[class*="about"] {
 		}
 
 		padding: 10px 0;
-		font-size: 1.6em;
+		font-size: 1.35em;
 		text-transform: uppercase;
 	}
 }
@@ -424,6 +431,8 @@ footer h4, .overlay-social h4 {
 
 	.navbar li a {
 		padding: 17px 20px;
+		padding-bottom: 25px;
+		font-size: 1em;
 	}
 
 	div [class*="about"], div [class*="port"] {
@@ -447,10 +456,11 @@ footer h4, .overlay-social h4 {
 @media all and (max-width: 627px) {
 	.jumbotron h2 {
 		margin-bottom: 50px;
+		font-size: 1.35em;
 	}
 
 	.main-title {
-		padding-top: 160px;
+		padding-top: 136px;
 	}
 
 	.overlay-social {
@@ -462,23 +472,23 @@ footer h4, .overlay-social h4 {
 
 @media all and (max-width: 370px) {
 	.navbar li a {
-		padding: 20px 10px;
+		padding: 20px 5px;
 	}
 
 	.main-title {
-		font-size: 4em;
+		font-size: 3em;
 	}
 
 	.jumbotron h3 {
 		font-size: 1.3em;
-		margin-bottom: 50px;
+		margin-bottom: 36px;
 	}
 
 	p {
-		line-height: 1.3em;
+		line-height: 1.5;
 	}
 	div [class*="about"], div [class*="port"] {
-		padding: 20px 5px;
+		padding: 20px 10px;
 	}
 
 	.section {

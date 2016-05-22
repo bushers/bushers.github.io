@@ -50,7 +50,7 @@ $(document).ready(function(){
 	showOverlay($('#portfolio-images-shade-luma'), $('#overlay-shade-luma'));
 	showOverlay($('#portfolio-images-kt-dance'), $('#overlay-kt-dance'));
 	showOverlay($('#portfolio-images-pasma'), $('#overlay-pasma'));
-	showOverlay($('#portfolio-images-homepage'), $('#overlay-homepage'));
+	showOverlay($('#portfolio-images-omm'), $('#overlay-omm'));
 
 
 	//Hide overlay
